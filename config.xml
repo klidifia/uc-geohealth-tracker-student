@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="nz.ac.canterbury.ucgeography" versionCode="10" version="1.0.0">
+  <preference name="phonegap-version" value="cli-6.3.0" />
+  <name>GeoHealthTracker</name>
+  <description>GeoHealthTracker</description>
+  <author href="http://www.canterbury.ac.nz/" email="haydenr@catalyst.net.nz">University of Canterbury</author>
+  <content src="index.html" />
+
+  <preference name="permissions" value="none" />
+
+  <platform name="android" />
+  <platform name="ios" />
+
+  <plugin name="cordova-plugin-mauron85-background-geolocation" spec="2.2.0" source="npm" />
+  <plugin name="cordova-plugin-whitelist" version="1.2.2" source="npm" />
+
+  <allow-navigation href="*://*/*" />
+  <allow-intent href="*://*/*" />
+  <access origin="*://*/*" />
+</widget>

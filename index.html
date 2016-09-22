@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>UC Geography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="static/css/screen.css" />
+  </head>
+  <body>
+
+    <div id="display"></div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="static/js/phonegap-loader.js"></script>
+    <script>
+      phonegap_script_loader
+      .add_scripts
+      ([
+        "static/js/lib/jquery-3.1.0.min.js",
+        "static/js/utils.js",
+        "static/js/index.js"
+      ])
+      .finalize();
+    </script>
+
+  </body>
+</html>
