@@ -8,7 +8,16 @@
   </head>
   <body>
 
-    <div id="display"></div>
+    <div id="display">
+      <div id="tokenform">
+        <p>Enter your access token:</p>
+        <input type="text" name="token" /><br />
+        <button onclick="localStorage.setItem('geotrackertoken', $('input[name=token]').val()); location.reload();">OK</button>
+      </div>
+      <div id="tracking">
+        <p>Tracking, ne touche pas!</p>
+      </div>
+    </div>
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="static/js/phonegap-loader.js"></script>

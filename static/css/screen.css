@@ -1,3 +1,11 @@
 body {
-  background-color: #cc0011;
+  background-color: #eaeaea;
+}
+
+div#tokenform {
+  display: none;
+}
+
+div#tracking {
+  display: none;
 }

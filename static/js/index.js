@@ -2,6 +2,19 @@
   "use strict";
 
   var init = function() {
+    // Check to see if we have an access token stored.
+    var token = localStorage.getItem('geotrackertoken');
+    if (token) {
+      track();
+      $("div#tracking").show()
+    }
+    else {
+      // No token, so present a UI asking for it.
+      $("div#tokenform").show()
+    }
+  };
+
+  var track = function() {
     backgroundGeolocation.configure(callbackFn, failureFn, {
       // Desired accuracy (metres). Possible values [0, 10, 100, 1000].
       desiredAccuracy: 100,
@@ -25,11 +38,11 @@
       saveBatteryOnBackground: false,
       pauseLocationUpdates: false,
       // Server.
-      url: 'http://150.242.40.7/post',
-      syncUrl: 'http://150.242.40.7/post',
+      url: 'https://geohealthtracker.catalystdemo.net.nz/api/push',
+      syncUrl: 'https://geohealthtracker.catalystdemo.net.nz/api/push',
       syncThreshold: 10,
       httpHeaders: {
-        'X-FOO': 'bar'
+        'Authorization': 'Token ' + localStorage.getItem('geotrackertoken')
       },
       maxLocations: 100
     });
