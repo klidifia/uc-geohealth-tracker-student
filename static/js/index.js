@@ -2,16 +2,35 @@
   "use strict";
 
   var init = function() {
-    // Check to see if we have an access token stored.
+    $("#login").click(login);
     var token = localStorage.getItem('geotrackertoken');
     if (token) {
       track();
       $("div#tracking").show()
     }
     else {
-      // No token, so present a UI asking for it.
-      $("div#tokenform").show()
+      // No token, so present a UI asking for credentials.
+      $("div#loginform").show()
     }
+  };
+
+  var login =  function() {
+
+    var data = JSON.stringify({ "username": $("#username").val(), "password" : $("#password").val(), participant: $("#participant").val() });
+
+    $.ajax({
+      type: 'POST',
+      data: data,
+      url: 'https://geohealthtracker.catalystdemo.net.nz/api/token',
+      success: function(data) {
+        localStorage.setItem('geotrackertoken', data);
+        location.reload();
+      },
+      error: function() {
+        alert('Error.');
+      }
+    });
+
   };
 
   var track = function() {

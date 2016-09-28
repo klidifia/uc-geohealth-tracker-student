@@ -9,13 +9,15 @@
   <body>
 
     <div id="display">
-      <div id="tokenform">
-        <p>Enter your access token:</p>
-        <input type="text" name="token" /><br />
-        <button onclick="localStorage.setItem('geotrackertoken', $('input[name=token]').val()); location.reload();">OK</button>
+      <div id="loginform">
+        <p>Enter your access details:</p>
+        Username: <input type="text" name="username" id="username" /><br />
+        Password: <input type="password" name="password" id="password" /><br />
+        Participant: <input type="text" name="participant" id="participant" /><br />
+        <button id="login">Login</button>
       </div>
       <div id="tracking">
-        <p>Tracking, ne touche pas!</p>
+        <p>Tracking...</p>
       </div>
     </div>
 
