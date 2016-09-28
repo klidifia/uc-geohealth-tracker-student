@@ -3,6 +3,7 @@
 
   var init = function() {
     $("#login").click(login);
+
     var token = localStorage.getItem('geotrackertoken');
     if (token) {
       track();
@@ -10,7 +11,7 @@
     }
     else {
       // No token, so present a UI asking for credentials.
-      $("div#loginform").show()
+      $("div#login-form").show()
     }
   };
 
@@ -27,7 +28,7 @@
         location.reload();
       },
       error: function() {
-        alert('Error.');
+        $(".alert").css("display", "inline-block");
       }
     });
 

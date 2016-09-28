@@ -2,22 +2,31 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>UC Geography</title>
+    <title>GeoHealth Tracker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="static/css/screen.css" />
   </head>
   <body>
 
     <div id="display">
-      <div id="loginform">
-        <p>Enter your access details:</p>
-        Username: <input type="text" name="username" id="username" /><br />
-        Password: <input type="password" name="password" id="password" /><br />
-        Participant: <input type="text" name="participant" id="participant" /><br />
-        <button id="login">Login</button>
+
+      <div id="login-form">
+        <h1>Enter access details</h1>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Username" id="username">
+        </div>
+        <div class="form-group log-status">
+          <input type="password" class="form-control" placeholder="Password" id="password">
+        </div>
+        <div class="form-group ">
+          <input type="text" class="form-control" placeholder="Participant" id="participant">
+        </div>
+        <span class="alert">Invalid Credentials</span>
+        <button id="login" type="button" class="log-btn">Track</button>
       </div>
+
       <div id="tracking">
-        <p>Tracking...</p>
+        <h1>Tracking</h1>
       </div>
     </div>
 
