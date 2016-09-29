@@ -39,9 +39,9 @@
       // Desired accuracy (metres). Possible values [0, 10, 100, 1000].
       desiredAccuracy: 100,
       // The minimum distance (metres) the device must move beyond the stationary location for aggressive background-tracking to engage.
-      stationaryRadius: 3,
+      stationaryRadius: 100,
       // The minimum distance (metres) a device must move horizontally before an update event is generated.
-      distanceFilter: 2,
+      distanceFilter: 100,
       debug: true,
       // Set stopOnTerminate in order to force a stop() when the application is terminated. (default true).
       stopOnTerminate: false,
