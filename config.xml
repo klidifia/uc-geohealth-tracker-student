@@ -17,12 +17,12 @@
   <!-- Icon -->
   <icon src="static/images/icon.png" />
   <!-- Android -->
-  <icon src="static/images/icon/android/drawable-ldpi-icon.png" platform="android" qualifier="ldpi" />
-  <icon src="static/images/icon/android/drawable-mdpi-icon.png" platform="android" qualifier="mdpi" />
-  <icon src="static/images/icon/android/drawable-hdpi-icon.png" platform="android" qualifier="hdpi" />
-  <icon src="static/images/icon/android/drawable-xhdpi-icon.png" platform="android" qualifier="xhdpi" />
-  <icon src="static/images/icon/android/drawable-xxhdpi-icon.png" platform="android" qualifier="xxhdpi" />
-  <icon src="static/images/icon/android/drawable-xxxhdpi-icon.png" platform="android" qualifier="xxxhdpi" />
+  <icon src="static/images/icon/android/ldpi.png" platform="android" qualifier="ldpi" />
+  <icon src="static/images/icon/android/mdpi.png" platform="android" qualifier="mdpi" />
+  <icon src="static/images/icon/android/hdpi.png" platform="android" qualifier="hdpi" />
+  <icon src="static/images/icon/android/xhdpi.png" platform="android" qualifier="xhdpi" />
+  <icon src="static/images/icon/android/xxhdpi.png" platform="android" qualifier="xxhdpi" />
+  <icon src="static/images/icon/android/xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
   <!-- iOS 8 -->
   <!-- iPhone 6 / 6+ -->
   <icon src="static/images/icon/ios/icon-60@3x.png" platform="ios" width="180" height="180" />
