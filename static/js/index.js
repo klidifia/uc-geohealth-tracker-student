@@ -49,9 +49,9 @@
       startOnBoot: true,
       startForeground: false,
       locationProvider: backgroundGeolocation.provider.ANDROID_ACTIVITY_PROVIDER,
-      interval: 60000,
-      fastestInterval: 60000,
-      activitiesInterval: 60000,
+      interval: 15 * 60 * 1000,
+      fastestInterval: 15 * 60 * 1000,
+      activitiesInterval: 15 * 60 * 1000,
       stopOnStillActivity: false,
       // iOS.
       activityType: 'OtherNavigation',
