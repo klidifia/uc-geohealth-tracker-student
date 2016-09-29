@@ -52,6 +52,22 @@
   <icon src="static/images/icon/ios/icon-50.png" platform="ios" width="50" height="50" />
   <icon src="static/images/icon/ios/icon-50@2x.png" platform="ios" width="100" height="100" />
 
+
+  <!-- Splash screens -->
+  <splash platform="ios" src="static/images/screens/ios/screen-iphone-portrait.png" width="320" height="480" />
+  <splash platform="ios" src="static/images/screens/ios/screen-iphone-portrait-2x.png" width="640" height="960" />
+  <splash platform="ios" src="static/images/screens/ios/screen-iphone-portrait-568h-2x.png" width="640" height="1136" />
+  <splash platform="ios" src="static/images/screens/ios/screen-iphone-portrait-667h.png" width="750" height="1334" />
+  <splash platform="ios" src="static/images/screens/ios/screen-iphone-portrait-736h.png" width="1242" height="2208" />
+  <splash platform="ios" src="static/images/screens/ios/screen-ipad-portrait.png" width="768" height="1024" />
+  <splash platform="ios" src="static/images/screens/ios/screen-ipad-portrait-2x.png" width="1536" height="2048" />
+
+  <splash platform="android" qualifier="ldpi" src="static/images/screens/android/screen-ldpi-portrait.png" />
+  <splash platform="android" qualifier="mdpi" src="static/images/screens/android/screen-mdpi-portrait.png" />
+  <splash platform="android" qualifier="hdpi" src="static/images/screens/android/screen-hdpi-portrait.png" />
+  <splash platform="android" qualifier="xhdpi" src="static/images/screens/android/screen-xhdpi-portrait.png" />
+
+
   <allow-navigation href="https://*/*" />
   <allow-intent href="https://*/*" />
   <access origin="https://*/*" />
