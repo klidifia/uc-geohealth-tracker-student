@@ -54,19 +54,31 @@
 
 
   <!-- Splash screens -->
-  <splash platform="ios" src="static/images/screens/ios/screen-iphone-portrait.png" width="320" height="480" />
-  <splash platform="ios" src="static/images/screens/ios/screen-iphone-portrait-2x.png" width="640" height="960" />
-  <splash platform="ios" src="static/images/screens/ios/screen-iphone-portrait-568h-2x.png" width="640" height="1136" />
-  <splash platform="ios" src="static/images/screens/ios/screen-iphone-portrait-667h.png" width="750" height="1334" />
-  <splash platform="ios" src="static/images/screens/ios/screen-iphone-portrait-736h.png" width="1242" height="2208" />
-  <splash platform="ios" src="static/images/screens/ios/screen-ipad-portrait.png" width="768" height="1024" />
-  <splash platform="ios" src="static/images/screens/ios/screen-ipad-portrait-2x.png" width="1536" height="2048" />
-
-  <splash platform="android" qualifier="ldpi" src="static/images/screens/android/screen-ldpi-portrait.png" />
-  <splash platform="android" qualifier="mdpi" src="static/images/screens/android/screen-mdpi-portrait.png" />
-  <splash platform="android" qualifier="hdpi" src="static/images/screens/android/screen-hdpi-portrait.png" />
-  <splash platform="android" qualifier="xhdpi" src="static/images/screens/android/screen-xhdpi-portrait.png" />
-
+  <splash src="splash.png" />
+  <!-- Android -->
+  <splash src="static/images/screens/android/ldpi-portrait.png" platform="android" qualifier="port-ldpi" />
+  <splash src="static/images/screens/android/ldpi-landscape.png" platform="android" qualifier="land-ldpi" />
+  <splash src="static/images/screens/android/mdpi-portrait.png" platform="android" qualifier="land-mdpi" />
+  <splash src="static/images/screens/android/mdpi-landscape.png" platform="android" qualifier="land-mdpi" />
+  <splash src="static/images/screens/android/hdpi-portrait.png" platform="android" qualifier="port-hdpi" />
+  <splash src="static/images/screens/android/hdpi-landscape.png" platform="android" qualifier="land-hdpi" />
+  <splash src="static/images/screens/android/xhdpi-portrait.png" platform="android" qualifier="port-xhdpi" />
+  <splash src="static/images/screens/android/xhdpi-landscape.png" platform="android" qualifier="land-xhdpi" />
+  <splash src="static/images/screens/android/xxhdpi-portrait.png" platform="android" qualifier="port-xxhdpi" />
+  <splash src="static/images/screens/android/xxhdpi-landscape.png" platform="android" qualifier="land-xxhdpi" />
+  <splash src="static/images/screens/android/xxxhdpi-portrait.png" platform="android" qualifier="port-xxxhdpi" />
+  <splash src="static/images/screens/android/xxxhdpi-landscape.png" platform="android" qualifier="land-xxxhdpi" />
+  <!-- iOS -->
+  <splash src="static/images/screens/ios/Default~iphone.png" platform="ios" width="320" height="480" />
+  <splash src="static/images/screens/ios/Default@2x~iphone.png" platform="ios" width="640" height="960" />
+  <splash src="static/images/screens/ios/Default-568h@2x~iphone.png" platform="ios" width="640" height="1136" />
+  <splash src="static/images/screens/ios/Default-Portrait~ipad.png" platform="ios" width="768" height="1024" />
+  <splash src="static/images/screens/ios/Default-Landscape~ipad.png" platform="ios" width="1024" height="768" />
+  <splash src="static/images/screens/ios/Default-Portrait@2x~ipad.png" platform="ios" width="1536" height="2048" />
+  <splash src="static/images/screens/ios/Default-Landscape@2x~ipad.png" platform="ios" width="2048" height="1536" />
+  <splash src="static/images/screens/ios/Default-667h.png" platform="ios" width="750" height="1334" />
+  <splash src="static/images/screens/ios/Default-736h.png" platform="ios" width="1242" height="2208" />
+  <splash src="static/images/screens/ios/Default-Landscape-736h.png" platform="ios" width="2208" height="1242" />
 
   <allow-navigation href="https://*/*" />
   <allow-intent href="https://*/*" />
