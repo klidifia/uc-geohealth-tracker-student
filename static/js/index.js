@@ -17,7 +17,7 @@
 
   var login =  function() {
 
-    var data = JSON.stringify({ "username": $("#username").val(), "password" : $("#password").val(), participant: $("#participant").val() });
+    var data = JSON.stringify({ "username": $("#username").val(), "password" : $("#password").val(), participant: $("#participant").val().toLowerCase() });
 
     $.ajax({
       type: 'POST',
