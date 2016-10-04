@@ -42,7 +42,7 @@
       stationaryRadius: 100,
       // The minimum distance (metres) a device must move horizontally before an update event is generated.
       distanceFilter: 100,
-      debug: true,
+      debug: false,
       // Set stopOnTerminate in order to force a stop() when the application is terminated. (default true).
       stopOnTerminate: false,
       // Android.
