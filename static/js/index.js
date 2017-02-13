@@ -22,7 +22,7 @@
     $.ajax({
       type: 'POST',
       data: data,
-      url: 'https://geohealthtracker.catalystdemo.net.nz/api/token',
+      url: 'https://geohealthtracker-student.catalystdemo.net.nz/api/token',
       success: function(data) {
         localStorage.setItem('geotrackertoken', data);
         location.reload();
@@ -58,8 +58,8 @@
       saveBatteryOnBackground: false,
       pauseLocationUpdates: false,
       // Server.
-      url: 'https://geohealthtracker.catalystdemo.net.nz/api/push',
-      syncUrl: 'https://geohealthtracker.catalystdemo.net.nz/api/push',
+      url: 'https://geohealthtracker-student.catalystdemo.net.nz/api/push',
+      syncUrl: 'https://geohealthtracker-student.catalystdemo.net.nz/api/push',
       syncThreshold: 10,
       httpHeaders: {
         'Authorization': 'Token ' + localStorage.getItem('geotrackertoken')

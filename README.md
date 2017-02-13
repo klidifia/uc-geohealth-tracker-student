@@ -1,4 +1,4 @@
-GeoHealthTracker Mobile Application
+GeoHealthTracker Mobile Application - Student version
 ========
 
 What am I?
