@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="nz.ac.canterbury.ucgeographystudent" versionCode="10" version="1.0.0">
   <preference name="phonegap-version" value="cli-6.5.0" />
-  <name>GeoHealth Tracker - Student</name>
-  <description>GeoHealth Tracker - Student version</description>
+  <name>GeoHealth Tracker - Christchurch</name>
+  <description>GeoHealth Tracker - Christchurch version</description>
   <author href="http://www.canterbury.ac.nz/" email="haydenr@catalyst.net.nz">University of Canterbury</author>
   <content src="index.html" />
 

@@ -1,4 +1,4 @@
-GeoHealthTracker Mobile Application - Student version
+GeoHealthTracker Mobile Application - Christchurch version
 ========
 
 What am I?
