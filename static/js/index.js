@@ -49,9 +49,9 @@
       startOnBoot: true,
       startForeground: false,
       locationProvider: backgroundGeolocation.provider.ANDROID_ACTIVITY_PROVIDER,
-      interval: 15 * 60 * 1000,
-      fastestInterval: 15 * 60 * 1000,
-      activitiesInterval: 15 * 60 * 1000,
+      interval: 30 * 1000,
+      fastestInterval: 30 * 1000,
+      activitiesInterval: 30 * 1000,
       stopOnStillActivity: false,
       // iOS.
       activityType: 'OtherNavigation',
@@ -78,6 +78,46 @@
     // In BACKGROUND mode plugin uses significant changes and region
     // monitoring to recieve locations and uses option.stationaryRadius only.
     backgroundGeolocation.switchMode(backgroundGeolocation.mode.FOREGROUND);
+
+    backgroundGeolocation.watchLocationMode(
+      function (enabled) {
+        if (enabled) {
+          window.alert('watchLocationMode enabled');
+        } else {
+          window.alert('watchLocationMode disabled');
+        }
+      },
+      function (error) {
+        window.alert('Error watching location mode. Error:' + error);
+      }
+    );
+
+    backgroundGeolocation.isLocationEnabled(function (enabled) {
+      if (enabled) {
+        backgroundGeolocation.start(
+          function () {
+            window.alert('isLocationEnabled enabled');
+          },
+          function (error) {
+            // Tracking has not started because of error
+            // you should adjust your app UI for example change switch element to indicate
+            // that service is not running
+            if (error.code === 2) {
+              if (window.confirm('Not authorized for location updates. Would you like to open app settings?')) {
+                backgroundGeolocation.showAppSettings();
+              }
+            } else {
+              window.alert('Start failed: ' + error.message);
+            }
+          }
+        );
+      } else {
+        // Location services are disabled
+        if (window.confirm('Location is disabled. Would you like to open location settings?')) {
+          backgroundGeolocation.showLocationSettings();
+        }
+      }
+    });
   };
 
   /**
